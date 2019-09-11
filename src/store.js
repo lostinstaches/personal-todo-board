@@ -4,11 +4,9 @@ import defaultBoard from './default-board'
 
 Vue.use(Vuex)
 
-const board = JSON.parse(localStorage.getItem('board')) || defaultBoard
-
 export default new Vuex.Store({
   state: {
-    board
+    board: defaultBoard
   },
   mutations: {}
 })
